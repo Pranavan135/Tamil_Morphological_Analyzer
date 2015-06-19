@@ -9,25 +9,6 @@ import java.nio.charset.StandardCharsets;
 public class WordChecking {
 
     public static void main(String[] args) throws IOException{
-//        File f=new File("read.txt");
-//        Reader decoded=new InputStreamReader(new FileInputStream(f), StandardCharsets.UTF_8);
-//        BufferedWriter bufferedWriter = new BufferedWriter (new OutputStreamWriter(System.out, StandardCharsets.UTF_8));
-//        char[] buffer = new char[1024];
-//        int n;
-//        StringBuilder build=new StringBuilder();
-//        while(true){
-//            n=decoded.read(buffer);
-//            if(n<0){break;}
-//            build.append(buffer,0,n);
-//            bufferedWriter.write(buffer);
-//        }
-
-//        System.out.println(buffer);
-//        String verse = buffer.toString();
-        //System.out.println(build.charAt(0));
-        //System.out.println(verse.charAt(1));
-        //System.out.println(verse);
-
 
         String str = "\u0142o\u017Cy\u0142";
         System.out.println(str);

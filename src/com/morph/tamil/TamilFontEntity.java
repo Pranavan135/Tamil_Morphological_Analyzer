@@ -6,17 +6,17 @@ import java.util.List;
  * Created by pranavan on 19/06/15.
  */
 public class TamilFontEntity {
-    private List<Character> charList;
+    private List<String> charList;
     private int xLocation;
     private int yLocation;
 
-    public TamilFontEntity(List<Character> charList, int xLocation, int yLocation){
+    public TamilFontEntity(List<String> charList, int xLocation, int yLocation){
         this.charList = charList;
         this.xLocation = xLocation;
         this.yLocation = yLocation;
     }
 
-    public List<Character> getCharList() {
+    public List<String> getCharList() {
         return charList;
     }
 
@@ -28,7 +28,7 @@ public class TamilFontEntity {
         return yLocation;
     }
 
-    public void setCharList(List<Character> charList) {
+    public void setCharList(List<String> charList) {
         this.charList = charList;
     }
 
