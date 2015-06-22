@@ -778,6 +778,456 @@ public class TamilLayout {
         System.out.println(tamilFontEntities[index][11]);
     }
 
+    private static void init10(int index){
+        List<String> list1 = new ArrayList<>();
+        List<String> list2 = new ArrayList<>();
+        List<String> list3 = new ArrayList<>();
+        List<String> list4 = new ArrayList<>();
+        List<String> list5 = new ArrayList<>();
+        List<String> list6 = new ArrayList<>();
+        List<String> list7 = new ArrayList<>();
+        List<String> list8 = new ArrayList<>();
+        List<String> list9 = new ArrayList<>();
+        List<String> list10 = new ArrayList<>();
+        List<String> list11 = new ArrayList<>();
+        List<String> list12 = new ArrayList<>();
+
+
+        list1.add("ய");
+        tamilFontEntities[index][0] = new TamilFontEntity(list1,0,0);
+        System.out.print(tamilFontEntities[index][0] + " ");
+
+        list2.add("ய");
+        list2.add("ா ");
+        tamilFontEntities[index][1] = new TamilFontEntity(list2, 0, 1);
+        System.out.print(tamilFontEntities[index][1] + " ");
+
+        list3.add("ய");
+        list3.add("ி ");
+        tamilFontEntities[index][2] = new TamilFontEntity(list3, 0, 2);
+        System.out.print(tamilFontEntities[index][2] + " ");
+
+        list4.add("ய");
+        list4.add("ீ ");
+        tamilFontEntities[index][3] = new TamilFontEntity(list4,0,3);
+        System.out.print(tamilFontEntities[index][3] + " ");
+
+        list5.add("ய");
+        list5.add("ு ");
+        tamilFontEntities[index][4] = new TamilFontEntity(list5,0,4);
+        System.out.print(tamilFontEntities[index][4] + " ");
+
+        list6.add("ய");
+        list6.add("ூ ");
+        tamilFontEntities[index][5] = new TamilFontEntity(list6,0,5);
+        System.out.print(tamilFontEntities[index][5] + " ");
+
+        list7.add("ய");
+        list7.add("ெ ");
+        tamilFontEntities[index][6] = new TamilFontEntity(list7,0,6);
+        System.out.print(tamilFontEntities[index][6] + " ");
+
+        list8.add("ய");
+        list8.add("ே ");
+        tamilFontEntities[index][7] = new TamilFontEntity(list8,0,7);
+        System.out.print(tamilFontEntities[index][7] + " ");
+
+        list9.add("ய");
+        list9.add("ை ");
+        tamilFontEntities[index][8] = new TamilFontEntity(list9,0,8);
+        System.out.print(tamilFontEntities[index][8] + " ");
+
+        list10.add("ய");
+        list10.add("ொ ");
+        tamilFontEntities[index][9] = new TamilFontEntity(list10,0,9);
+        System.out.print(tamilFontEntities[index][9] + " ");
+
+        list11.add("ய");
+        list11.add("ோ ");
+        tamilFontEntities[index][10] = new TamilFontEntity(list11,0,10);
+        System.out.print(tamilFontEntities[index][10] + " ");
+
+        list12.add("ய");
+        list12.add("ௌ ");
+        tamilFontEntities[index][11] = new TamilFontEntity(list12,0,11);
+        System.out.println(tamilFontEntities[index][11]);
+    }
+
+    private static void init11(int index){
+        List<String> list1 = new ArrayList<>();
+        List<String> list2 = new ArrayList<>();
+        List<String> list3 = new ArrayList<>();
+        List<String> list4 = new ArrayList<>();
+        List<String> list5 = new ArrayList<>();
+        List<String> list6 = new ArrayList<>();
+        List<String> list7 = new ArrayList<>();
+        List<String> list8 = new ArrayList<>();
+        List<String> list9 = new ArrayList<>();
+        List<String> list10 = new ArrayList<>();
+        List<String> list11 = new ArrayList<>();
+        List<String> list12 = new ArrayList<>();
+
+
+        list1.add("ர");
+        tamilFontEntities[index][0] = new TamilFontEntity(list1,0,0);
+        System.out.print(tamilFontEntities[index][0] + " ");
+
+        list2.add("ர");
+        list2.add("ா ");
+        tamilFontEntities[index][1] = new TamilFontEntity(list2, 0, 1);
+        System.out.print(tamilFontEntities[index][1] + " ");
+
+        list3.add("ர");
+        list3.add("ி ");
+        tamilFontEntities[index][2] = new TamilFontEntity(list3, 0, 2);
+        System.out.print(tamilFontEntities[index][2] + " ");
+
+        list4.add("ர");
+        list4.add("ீ ");
+        tamilFontEntities[index][3] = new TamilFontEntity(list4,0,3);
+        System.out.print(tamilFontEntities[index][3] + " ");
+
+        list5.add("ர");
+        list5.add("ு ");
+        tamilFontEntities[index][4] = new TamilFontEntity(list5,0,4);
+        System.out.print(tamilFontEntities[index][4] + " ");
+
+        list6.add("ர");
+        list6.add("ூ ");
+        tamilFontEntities[index][5] = new TamilFontEntity(list6,0,5);
+        System.out.print(tamilFontEntities[index][5] + " ");
+
+        list7.add("ர");
+        list7.add("ெ ");
+        tamilFontEntities[index][6] = new TamilFontEntity(list7,0,6);
+        System.out.print(tamilFontEntities[index][6] + " ");
+
+        list8.add("ர");
+        list8.add("ே ");
+        tamilFontEntities[index][7] = new TamilFontEntity(list8,0,7);
+        System.out.print(tamilFontEntities[index][7] + " ");
+
+        list9.add("ர");
+        list9.add("ை ");
+        tamilFontEntities[index][8] = new TamilFontEntity(list9,0,8);
+        System.out.print(tamilFontEntities[index][8] + " ");
+
+        list10.add("ர");
+        list10.add("ொ ");
+        tamilFontEntities[index][9] = new TamilFontEntity(list10,0,9);
+        System.out.print(tamilFontEntities[index][9] + " ");
+
+        list11.add("ர");
+        list11.add("ோ ");
+        tamilFontEntities[index][10] = new TamilFontEntity(list11,0,10);
+        System.out.print(tamilFontEntities[index][10] + " ");
+
+        list12.add("ர");
+        list12.add("ௌ ");
+        tamilFontEntities[index][11] = new TamilFontEntity(list12,0,11);
+        System.out.println(tamilFontEntities[index][11]);
+    }
+
+    private static void init12(int index){
+        List<String> list1 = new ArrayList<>();
+        List<String> list2 = new ArrayList<>();
+        List<String> list3 = new ArrayList<>();
+        List<String> list4 = new ArrayList<>();
+        List<String> list5 = new ArrayList<>();
+        List<String> list6 = new ArrayList<>();
+        List<String> list7 = new ArrayList<>();
+        List<String> list8 = new ArrayList<>();
+        List<String> list9 = new ArrayList<>();
+        List<String> list10 = new ArrayList<>();
+        List<String> list11 = new ArrayList<>();
+        List<String> list12 = new ArrayList<>();
+
+
+        list1.add("ல");
+        tamilFontEntities[index][0] = new TamilFontEntity(list1,0,0);
+        System.out.print(tamilFontEntities[index][0] + " ");
+
+        list2.add("ல");
+        list2.add("ா ");
+        tamilFontEntities[index][1] = new TamilFontEntity(list2, 0, 1);
+        System.out.print(tamilFontEntities[index][1] + " ");
+
+        list3.add("ல");
+        list3.add("ி ");
+        tamilFontEntities[index][2] = new TamilFontEntity(list3, 0, 2);
+        System.out.print(tamilFontEntities[index][2] + " ");
+
+        list4.add("ல");
+        list4.add("ீ ");
+        tamilFontEntities[index][3] = new TamilFontEntity(list4,0,3);
+        System.out.print(tamilFontEntities[index][3] + " ");
+
+        list5.add("ல");
+        list5.add("ு ");
+        tamilFontEntities[index][4] = new TamilFontEntity(list5,0,4);
+        System.out.print(tamilFontEntities[index][4] + " ");
+
+        list6.add("ல");
+        list6.add("ூ ");
+        tamilFontEntities[index][5] = new TamilFontEntity(list6,0,5);
+        System.out.print(tamilFontEntities[index][5] + " ");
+
+        list7.add("ல");
+        list7.add("ெ ");
+        tamilFontEntities[index][6] = new TamilFontEntity(list7,0,6);
+        System.out.print(tamilFontEntities[index][6] + " ");
+
+        list8.add("ல");
+        list8.add("ே ");
+        tamilFontEntities[index][7] = new TamilFontEntity(list8,0,7);
+        System.out.print(tamilFontEntities[index][7] + " ");
+
+        list9.add("ல");
+        list9.add("ை ");
+        tamilFontEntities[index][8] = new TamilFontEntity(list9,0,8);
+        System.out.print(tamilFontEntities[index][8] + " ");
+
+        list10.add("ல");
+        list10.add("ொ ");
+        tamilFontEntities[index][9] = new TamilFontEntity(list10,0,9);
+        System.out.print(tamilFontEntities[index][9] + " ");
+
+        list11.add("ல");
+        list11.add("ோ ");
+        tamilFontEntities[index][10] = new TamilFontEntity(list11,0,10);
+        System.out.print(tamilFontEntities[index][10] + " ");
+
+        list12.add("ல");
+        list12.add("ௌ ");
+        tamilFontEntities[index][11] = new TamilFontEntity(list12,0,11);
+        System.out.println(tamilFontEntities[index][11]);
+    }
+
+    private static void init13(int index){
+        List<String> list1 = new ArrayList<>();
+        List<String> list2 = new ArrayList<>();
+        List<String> list3 = new ArrayList<>();
+        List<String> list4 = new ArrayList<>();
+        List<String> list5 = new ArrayList<>();
+        List<String> list6 = new ArrayList<>();
+        List<String> list7 = new ArrayList<>();
+        List<String> list8 = new ArrayList<>();
+        List<String> list9 = new ArrayList<>();
+        List<String> list10 = new ArrayList<>();
+        List<String> list11 = new ArrayList<>();
+        List<String> list12 = new ArrayList<>();
+
+
+        list1.add("வ");
+        tamilFontEntities[index][0] = new TamilFontEntity(list1,0,0);
+        System.out.print(tamilFontEntities[index][0] + " ");
+
+        list2.add("வ");
+        list2.add("ா ");
+        tamilFontEntities[index][1] = new TamilFontEntity(list2, 0, 1);
+        System.out.print(tamilFontEntities[index][1] + " ");
+
+        list3.add("வ");
+        list3.add("ி ");
+        tamilFontEntities[index][2] = new TamilFontEntity(list3, 0, 2);
+        System.out.print(tamilFontEntities[index][2] + " ");
+
+        list4.add("வ");
+        list4.add("ீ ");
+        tamilFontEntities[index][3] = new TamilFontEntity(list4,0,3);
+        System.out.print(tamilFontEntities[index][3] + " ");
+
+        list5.add("வ");
+        list5.add("ு ");
+        tamilFontEntities[index][4] = new TamilFontEntity(list5,0,4);
+        System.out.print(tamilFontEntities[index][4] + " ");
+
+        list6.add("வ");
+        list6.add("ூ ");
+        tamilFontEntities[index][5] = new TamilFontEntity(list6,0,5);
+        System.out.print(tamilFontEntities[index][5] + " ");
+
+        list7.add("வ");
+        list7.add("ெ ");
+        tamilFontEntities[index][6] = new TamilFontEntity(list7,0,6);
+        System.out.print(tamilFontEntities[index][6] + " ");
+
+        list8.add("வ");
+        list8.add("ே ");
+        tamilFontEntities[index][7] = new TamilFontEntity(list8,0,7);
+        System.out.print(tamilFontEntities[index][7] + " ");
+
+        list9.add("வ");
+        list9.add("ை ");
+        tamilFontEntities[index][8] = new TamilFontEntity(list9,0,8);
+        System.out.print(tamilFontEntities[index][8] + " ");
+
+        list10.add("வ");
+        list10.add("ொ ");
+        tamilFontEntities[index][9] = new TamilFontEntity(list10,0,9);
+        System.out.print(tamilFontEntities[index][9] + " ");
+
+        list11.add("வ");
+        list11.add("ோ ");
+        tamilFontEntities[index][10] = new TamilFontEntity(list11,0,10);
+        System.out.print(tamilFontEntities[index][10] + " ");
+
+        list12.add("வ");
+        list12.add("ௌ ");
+        tamilFontEntities[index][11] = new TamilFontEntity(list12,0,11);
+        System.out.println(tamilFontEntities[index][11]);
+    }
+
+    private static void init14(int index){
+        List<String> list1 = new ArrayList<>();
+        List<String> list2 = new ArrayList<>();
+        List<String> list3 = new ArrayList<>();
+        List<String> list4 = new ArrayList<>();
+        List<String> list5 = new ArrayList<>();
+        List<String> list6 = new ArrayList<>();
+        List<String> list7 = new ArrayList<>();
+        List<String> list8 = new ArrayList<>();
+        List<String> list9 = new ArrayList<>();
+        List<String> list10 = new ArrayList<>();
+        List<String> list11 = new ArrayList<>();
+        List<String> list12 = new ArrayList<>();
+
+
+        list1.add("ழ");
+        tamilFontEntities[index][0] = new TamilFontEntity(list1,0,0);
+        System.out.print(tamilFontEntities[index][0] + " ");
+
+        list2.add("ழ");
+        list2.add("ா ");
+        tamilFontEntities[index][1] = new TamilFontEntity(list2, 0, 1);
+        System.out.print(tamilFontEntities[index][1] + " ");
+
+        list3.add("ழ");
+        list3.add("ி ");
+        tamilFontEntities[index][2] = new TamilFontEntity(list3, 0, 2);
+        System.out.print(tamilFontEntities[index][2] + " ");
+
+        list4.add("ழ");
+        list4.add("ீ ");
+        tamilFontEntities[index][3] = new TamilFontEntity(list4,0,3);
+        System.out.print(tamilFontEntities[index][3] + " ");
+
+        list5.add("ழ");
+        list5.add("ு ");
+        tamilFontEntities[index][4] = new TamilFontEntity(list5,0,4);
+        System.out.print(tamilFontEntities[index][4] + " ");
+
+        list6.add("ழ");
+        list6.add("ூ ");
+        tamilFontEntities[index][5] = new TamilFontEntity(list6,0,5);
+        System.out.print(tamilFontEntities[index][5] + " ");
+
+        list7.add("ழ");
+        list7.add("ெ ");
+        tamilFontEntities[index][6] = new TamilFontEntity(list7,0,6);
+        System.out.print(tamilFontEntities[index][6] + " ");
+
+        list8.add("ழ");
+        list8.add("ே ");
+        tamilFontEntities[index][7] = new TamilFontEntity(list8,0,7);
+        System.out.print(tamilFontEntities[index][7] + " ");
+
+        list9.add("ழ");
+        list9.add("ை ");
+        tamilFontEntities[index][8] = new TamilFontEntity(list9,0,8);
+        System.out.print(tamilFontEntities[index][8] + " ");
+
+        list10.add("ழ");
+        list10.add("ொ ");
+        tamilFontEntities[index][9] = new TamilFontEntity(list10,0,9);
+        System.out.print(tamilFontEntities[index][9] + " ");
+
+        list11.add("ழ");
+        list11.add("ோ ");
+        tamilFontEntities[index][10] = new TamilFontEntity(list11,0,10);
+        System.out.print(tamilFontEntities[index][10] + " ");
+
+        list12.add("ழ");
+        list12.add("ௌ ");
+        tamilFontEntities[index][11] = new TamilFontEntity(list12,0,11);
+        System.out.println(tamilFontEntities[index][11]);
+    }
+
+    private static void init15(int index){
+        List<String> list1 = new ArrayList<>();
+        List<String> list2 = new ArrayList<>();
+        List<String> list3 = new ArrayList<>();
+        List<String> list4 = new ArrayList<>();
+        List<String> list5 = new ArrayList<>();
+        List<String> list6 = new ArrayList<>();
+        List<String> list7 = new ArrayList<>();
+        List<String> list8 = new ArrayList<>();
+        List<String> list9 = new ArrayList<>();
+        List<String> list10 = new ArrayList<>();
+        List<String> list11 = new ArrayList<>();
+        List<String> list12 = new ArrayList<>();
+
+
+        list1.add("ள");
+        tamilFontEntities[index][0] = new TamilFontEntity(list1,0,0);
+        System.out.print(tamilFontEntities[index][0] + " ");
+
+        list2.add("ள");
+        list2.add("ா ");
+        tamilFontEntities[index][1] = new TamilFontEntity(list2, 0, 1);
+        System.out.print(tamilFontEntities[index][1] + " ");
+
+        list3.add("ள");
+        list3.add("ி ");
+        tamilFontEntities[index][2] = new TamilFontEntity(list3, 0, 2);
+        System.out.print(tamilFontEntities[index][2] + " ");
+
+        list4.add("ள");
+        list4.add("ீ ");
+        tamilFontEntities[index][3] = new TamilFontEntity(list4,0,3);
+        System.out.print(tamilFontEntities[index][3] + " ");
+
+        list5.add("ள");
+        list5.add("ு ");
+        tamilFontEntities[index][4] = new TamilFontEntity(list5,0,4);
+        System.out.print(tamilFontEntities[index][4] + " ");
+
+        list6.add("ள");
+        list6.add("ூ ");
+        tamilFontEntities[index][5] = new TamilFontEntity(list6,0,5);
+        System.out.print(tamilFontEntities[index][5] + " ");
+
+        list7.add("ள");
+        list7.add("ெ ");
+        tamilFontEntities[index][6] = new TamilFontEntity(list7,0,6);
+        System.out.print(tamilFontEntities[index][6] + " ");
+
+        list8.add("ள");
+        list8.add("ே ");
+        tamilFontEntities[index][7] = new TamilFontEntity(list8,0,7);
+        System.out.print(tamilFontEntities[index][7] + " ");
+
+        list9.add("ள");
+        list9.add("ை ");
+        tamilFontEntities[index][8] = new TamilFontEntity(list9,0,8);
+        System.out.print(tamilFontEntities[index][8] + " ");
+
+        list10.add("ள");
+        list10.add("ொ ");
+        tamilFontEntities[index][9] = new TamilFontEntity(list10,0,9);
+        System.out.print(tamilFontEntities[index][9] + " ");
+
+        list11.add("ள");
+        list11.add("ோ ");
+        tamilFontEntities[index][10] = new TamilFontEntity(list11,0,10);
+        System.out.print(tamilFontEntities[index][10] + " ");
+
+        list12.add("ள");
+        list12.add("ௌ ");
+        tamilFontEntities[index][11] = new TamilFontEntity(list12,0,11);
+        System.out.println(tamilFontEntities[index][11]);
+    }
+
     private static void init16(int index){
         List<String> list1 = new ArrayList<>();
         List<String> list2 = new ArrayList<>();
