@@ -6,18 +6,18 @@ import java.util.List;
  * Created by pranavan on 19/06/15.
  */
 public class TamilFontEntity {
-    private List<String> charList;
+    private List<String> unicodeList;
     private int xLocation;
     private int yLocation;
 
-    public TamilFontEntity(List<String> charList, int xLocation, int yLocation){
-        this.charList = charList;
+    public TamilFontEntity(List<String> unicodeList, int xLocation, int yLocation){
+        this.unicodeList = unicodeList;
         this.xLocation = xLocation;
         this.yLocation = yLocation;
     }
 
-    public List<String> getCharList() {
-        return charList;
+    public List<String> getUnicodeList() {
+        return unicodeList;
     }
 
     public int getxLocation() {
@@ -28,8 +28,8 @@ public class TamilFontEntity {
         return yLocation;
     }
 
-    public void setCharList(List<String> charList) {
-        this.charList = charList;
+    public void setUnicodeList(List<String> unicodeList) {
+        this.unicodeList = unicodeList;
     }
 
     public void setxLocation(int xLocation) {
@@ -38,5 +38,15 @@ public class TamilFontEntity {
 
     public void setyLocation(int yLocation) {
         this.yLocation = yLocation;
+    }
+
+    @Override
+    public String toString() {
+        String str = "";
+
+        for(String s : unicodeList){
+            str = str + s;
+        }
+        return str;
     }
 }
