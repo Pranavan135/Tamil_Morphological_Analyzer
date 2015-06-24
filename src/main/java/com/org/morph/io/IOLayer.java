@@ -1,6 +1,6 @@
-package main.java.com.tamil.morph.io;
+package com.org.morph.io;
 
-import main.java.com.tamil.morph.tamil.TamilFontEntity;
+import com.org.morph.tamil.TamilFontEntity;
 
 import java.util.List;
 

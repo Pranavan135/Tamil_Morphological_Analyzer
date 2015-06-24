@@ -1,4 +1,4 @@
-package main.java.com.tamil.morph.test;
+package com.org.morph.test;
 
 
 import java.io.File;
