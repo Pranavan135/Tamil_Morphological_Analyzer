@@ -1,0 +1,6 @@
+com/org/morph/tamil/TamilLayout.class
+com/org/morph/test/WordChecking.class
+com/org/morph/test/IOChecking.class
+com/org/morph/io/IOLayer.class
+com/org/morph/tamil/TamilFontEntity.class
+com/org/morph/test/UTFTesting.class

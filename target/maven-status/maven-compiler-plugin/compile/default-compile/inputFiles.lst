@@ -1,6 +1,6 @@
-/home/pranavan/FYP/Tamil_Morphological_Analyzer/src/main/java/com/tamil/morph/test/UTFTesting.java
-/home/pranavan/FYP/Tamil_Morphological_Analyzer/src/main/java/com/tamil/morph/tamil/TamilFontEntity.java
-/home/pranavan/FYP/Tamil_Morphological_Analyzer/src/main/java/com/tamil/morph/io/IOLayer.java
-/home/pranavan/FYP/Tamil_Morphological_Analyzer/src/main/java/com/tamil/morph/test/IOChecking.java
-/home/pranavan/FYP/Tamil_Morphological_Analyzer/src/main/java/com/tamil/morph/test/WordChecking.java
-/home/pranavan/FYP/Tamil_Morphological_Analyzer/src/main/java/com/tamil/morph/tamil/TamilLayout.java
+/home/pranavan/FYP/Tamil_Morphological_Analyzer/src/main/java/com/org/morph/test/IOChecking.java
+/home/pranavan/FYP/Tamil_Morphological_Analyzer/src/main/java/com/org/morph/test/WordChecking.java
+/home/pranavan/FYP/Tamil_Morphological_Analyzer/src/main/java/com/org/morph/io/IOLayer.java
+/home/pranavan/FYP/Tamil_Morphological_Analyzer/src/main/java/com/org/morph/tamil/TamilFontEntity.java
+/home/pranavan/FYP/Tamil_Morphological_Analyzer/src/main/java/com/org/morph/test/UTFTesting.java
+/home/pranavan/FYP/Tamil_Morphological_Analyzer/src/main/java/com/org/morph/tamil/TamilLayout.java
