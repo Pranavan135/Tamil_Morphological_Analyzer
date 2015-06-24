@@ -1,10 +1,13 @@
-package com.morph.test;
+package main.java.com.tamil.morph.test;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.Locale;
 import java.util.Scanner;
 
+/**
+ * dummy class
+ */
 public class UTFTesting {
     public static void main(String[] args) throws IOException{
         Locale locale = new Locale("ta", "TA");

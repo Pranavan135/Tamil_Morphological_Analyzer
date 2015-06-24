@@ -1,6 +1,7 @@
-package com.morph.tamil;
+package main.java.com.tamil.morph.tamil;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -9,6 +10,7 @@ import java.util.List;
 public class TamilLayout {
 
     public static TamilFontEntity[][] tamilFontEntities = new TamilFontEntity[18][12];
+    public static HashMap<String,TamilFontEntity> tamilLetterMap = new HashMap<>();
 
     public static void init(){
         init0(0);
@@ -23,6 +25,12 @@ public class TamilLayout {
         init9(9);
         init16(10);
         init17(17);
+
+        for(int i = 0 ; i < 12 ; i++){
+            for(int j = 0 ; j < 18 ; j++){
+                tamilLetterMap.put(tamilFontEntities[i][j].toString(), tamilFontEntities[i][j]);
+            }
+        }
     }
 
     private static void init0(int index){

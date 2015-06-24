@@ -1,4 +1,4 @@
-package com.morph.tamil;
+package main.java.com.tamil.morph.tamil;
 
 import java.util.List;
 

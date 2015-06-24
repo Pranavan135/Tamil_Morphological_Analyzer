@@ -1,4 +1,4 @@
-package com.morph.test;
+package main.java.com.tamil.morph.test;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
