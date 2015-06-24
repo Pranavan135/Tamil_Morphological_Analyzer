@@ -7,13 +7,26 @@ import java.util.List;
  */
 public class TamilFontEntity {
     private List<String> unicodeList;
+    private String charList;
     private int xLocation;
     private int yLocation;
+    private int x;
+    private boolean isTamilLetter;
 
     public TamilFontEntity(List<String> unicodeList, int xLocation, int yLocation){
         this.unicodeList = unicodeList;
         this.xLocation = xLocation;
         this.yLocation = yLocation;
+        isTamilLetter = true;
+    }
+
+    public TamilFontEntity(List<String> unicodeList, int x){
+        this.unicodeList = unicodeList;
+        this.x = x;
+    }
+
+    public TamilFontEntity(String charList){
+        this.charList = charList;
     }
 
     public List<String> getUnicodeList() {

@@ -18,11 +18,16 @@ public class IOLayer {
     }
 
     /**
-     * need to implement
      * @param list
      * @return
      */
-    public static String getText(List<TamilFontEntity> list){
-        return null;
+    public static StringBuilder getText(List<TamilFontEntity> list){
+        StringBuilder stringBuilder = new StringBuilder();
+
+        for(TamilFontEntity tamilFontEntity : list){
+            stringBuilder.append(tamilFontEntity.toString());
+        }
+
+        return stringBuilder;
     }
 }

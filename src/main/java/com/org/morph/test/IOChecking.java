@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class IOChecking {
     public static void main(String[] args) throws IOException{
-        Scanner scanner = new Scanner(new File("5.txt"));
+        Scanner scanner = new Scanner(new File("lives.txt"));
 
         String line = scanner.nextLine().trim();
 

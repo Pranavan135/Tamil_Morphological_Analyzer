@@ -10,7 +10,10 @@ import java.util.List;
 public class TamilLayout {
 
     public static TamilFontEntity[][] tamilFontEntities = new TamilFontEntity[18][12];
+    public static TamilFontEntity[] lives = new TamilFontEntity[12];
+    public static TamilFontEntity[] bodies = new TamilFontEntity[18];
     public static HashMap<String,TamilFontEntity> tamilLetterMap = new HashMap<>();
+    public static HashMap<String,TamilFontEntity> livesMap = new HashMap<>();
 
     public static void init(){
         init0(0);
@@ -25,14 +28,81 @@ public class TamilLayout {
         init9(9);
         init16(10);
         init17(17);
+        initLives();
 
+        /**
+         * putting 12x18 letters into the map
+         */
         for(int i = 0 ; i < 12 ; i++){
             for(int j = 0 ; j < 18 ; j++){
                 tamilLetterMap.put(tamilFontEntities[i][j].toString(), tamilFontEntities[i][j]);
             }
         }
+
+        /**
+         * putting lives into maps
+         */
+
+        for (int i = 0 ; i < 12 ; i++){
+            tamilLetterMap.put(lives[i].toString(), lives[i]);
+            livesMap.put(lives[i].toString(), lives[i]);
+        }
     }
 
+
+    private static void initLives(){
+        List<String> list1 = new ArrayList<>();
+        List<String> list2 = new ArrayList<>();
+        List<String> list3 = new ArrayList<>();
+        List<String> list4 = new ArrayList<>();
+        List<String> list5 = new ArrayList<>();
+        List<String> list6 = new ArrayList<>();
+        List<String> list7 = new ArrayList<>();
+        List<String> list8 = new ArrayList<>();
+        List<String> list9 = new ArrayList<>();
+        List<String> list10 = new ArrayList<>();
+        List<String> list11 = new ArrayList<>();
+        List<String> list12 = new ArrayList<>();
+
+        list1.add("அ");
+        lives[0] = new TamilFontEntity(list1,0);
+
+        list2.add("ஆ");
+        lives[1] = new TamilFontEntity(list2, 1);
+
+        list3.add("இ");
+        lives[2] = new TamilFontEntity(list3, 2);
+
+        list4.add("ஈ");
+        lives[3] = new TamilFontEntity(list4, 3);
+
+        list5.add("உ");
+        lives[4] = new TamilFontEntity(list5, 4);
+
+        list6.add("ஊ");
+        lives[5] =  new TamilFontEntity(list6, 5);
+
+        list7.add("எ");
+        lives[6] =  new TamilFontEntity(list7, 6);
+
+        list8.add("ஏ");
+        lives[7] =  new TamilFontEntity(list8, 7);
+
+        list9.add("ஐ");
+        lives[8] =  new TamilFontEntity(list9, 8);
+
+        list10.add("ஒ");
+        lives[9] =  new TamilFontEntity(list10, 9);
+
+        list11.add("ஓ");
+        lives[10] =  new TamilFontEntity(list11,10);
+
+        list12.add("ஒ");
+        list12.add("ள");
+        lives[11] =  new TamilFontEntity(list12, 11);
+
+
+    }
     private static void init0(int index){
         List<String> list1 = new ArrayList<>();
         List<String> list2 = new ArrayList<>();
