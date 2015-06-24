@@ -14,6 +14,7 @@ public class TamilLayout {
     public static TamilFontEntity[] bodies = new TamilFontEntity[18];
     public static HashMap<String,TamilFontEntity> tamilLetterMap = new HashMap<>();
     public static HashMap<String,TamilFontEntity> livesMap = new HashMap<>();
+    public static HashMap<String,TamilFontEntity> bodiesMap = new HashMap<>();
 
     public static void init(){
         init0(0);
@@ -26,9 +27,16 @@ public class TamilLayout {
         init7(7);
         init8(8);
         init9(9);
-        init16(10);
+        init10(10);
+        init11(11);
+        init12(12);
+        init13(13);
+        init14(14);
+        init15(15);
+        init16(16);
         init17(17);
         initLives();
+        initBodies();
 
         /**
          * putting 12x18 letters into the map
@@ -47,9 +55,110 @@ public class TamilLayout {
             tamilLetterMap.put(lives[i].toString(), lives[i]);
             livesMap.put(lives[i].toString(), lives[i]);
         }
+
+        /**
+         * putting bodies into map
+         */
+        for(int i = 0 ; i < 18 ; i++){
+            tamilLetterMap.put(bodies[i].toString(), bodies[i]);
+            bodiesMap.put(bodies[i].toString(), bodies[i]);
+        }
     }
 
 
+    private static void initBodies(){
+        List<String> list1 = new ArrayList<>();
+        List<String> list2 = new ArrayList<>();
+        List<String> list3 = new ArrayList<>();
+        List<String> list4 = new ArrayList<>();
+        List<String> list5 = new ArrayList<>();
+        List<String> list6 = new ArrayList<>();
+        List<String> list7 = new ArrayList<>();
+        List<String> list8 = new ArrayList<>();
+        List<String> list9 = new ArrayList<>();
+        List<String> list10 = new ArrayList<>();
+        List<String> list11 = new ArrayList<>();
+        List<String> list12 = new ArrayList<>();
+        List<String> list13 = new ArrayList<>();
+        List<String> list14 = new ArrayList<>();
+        List<String> list15 = new ArrayList<>();
+        List<String> list16 = new ArrayList<>();
+        List<String> list17 = new ArrayList<>();
+        List<String> list18 = new ArrayList<>();
+
+
+        list1.add("க");
+        list1.add("் ");
+        bodies[0] = new TamilFontEntity(list1,0);
+
+        list2.add("ங");
+        list2.add("் ");
+        bodies[1] = new TamilFontEntity(list2,1);
+
+        list3.add("ச");
+        list3.add("் ");
+        bodies[2] = new TamilFontEntity(list3,2);
+
+        list4.add("ஞ");
+        list4.add("் ");
+        bodies[3] = new TamilFontEntity(list4,3);
+
+        list5.add("ட");
+        list5.add("் ");
+        bodies[4] = new TamilFontEntity(list5,4);
+
+        list6.add("ண");
+        list6.add("் ");
+        bodies[5] = new TamilFontEntity(list6,5);
+
+        list7.add("த");
+        list7.add("் ");
+        bodies[6] = new TamilFontEntity(list7,6);
+
+        list8.add("ந");
+        list8.add("் ");
+        bodies[7] = new TamilFontEntity(list8,7);
+
+        list9.add("ப");
+        list9.add("் ");
+        bodies[8] = new TamilFontEntity(list9,8);
+
+        list10.add("ம");
+        list10.add("் ");
+        bodies[9] = new TamilFontEntity(list10,9);
+
+        list11.add("ய");
+        list11.add("் ");
+        bodies[10] = new TamilFontEntity(list11,10);
+
+        list12.add("ர");
+        list12.add("் ");
+        bodies[11] = new TamilFontEntity(list12,11);
+
+        list13.add("ல");
+        list13.add("் ");
+        bodies[12] = new TamilFontEntity(list13,12);
+
+        list14.add("வ");
+        list14.add("் ");
+        bodies[13] = new TamilFontEntity(list14,13);
+
+        list15.add("ழ");
+        list15.add("் ");
+        bodies[14] = new TamilFontEntity(list15,14);
+
+        list16.add("ள");
+        list16.add("் ");
+        bodies[15] = new TamilFontEntity(list16,15);
+
+        list17.add("ற");
+        list17.add("் ");
+        bodies[16] = new TamilFontEntity(list17,16);
+
+        list18.add("ன");
+        list18.add("் ");
+        bodies[17] = new TamilFontEntity(list18,17);
+    }
     private static void initLives(){
         List<String> list1 = new ArrayList<>();
         List<String> list2 = new ArrayList<>();
