@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c0f3c56-04b2-4e02-a78b-9c129eaf2766" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/org/morph/io/IOLayer.java" afterPath="$PROJECT_DIR$/src/main/java/com/org/morph/io/IOLayer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/org/morph/tamil/TamilLayout.java" afterPath="$PROJECT_DIR$/src/main/java/com/org/morph/tamil/TamilLayout.java" />
-    </list>
+    <list default="true" id="8c0f3c56-04b2-4e02-a78b-9c129eaf2766" name="Default" comment="" />
     <ignored path="Tamil_Morphological_Analyzer.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IOLayer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="IOLayer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/org/morph/io/IOLayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.52238804">
               <caret line="34" column="77" selection-start-line="34" selection-start-column="77" selection-end-line="34" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -73,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TamilLayout.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TamilLayout.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/org/morph/tamil/TamilLayout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64179105">
-              <caret line="1588" column="2" selection-start-line="1588" selection-start-column="2" selection-end-line="1588" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1588" column="0" selection-start-line="1588" selection-start-column="0" selection-end-line="1588" selection-end-column="0" />
               <folding>
                 <element signature="method#init#0;class#TamilLayout#0" expanded="false" />
                 <element signature="method#initAtomicParts#0;class#TamilLayout#0" expanded="false" />
@@ -892,28 +889,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/org/morph/io/IOLayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="77" selection-start-line="34" selection-start-column="77" selection-end-line="34" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/org/morph/test/IOChecking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/org/morph/tamil/TamilLayout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64179105">
-          <caret line="1588" column="2" selection-start-line="1588" selection-start-column="2" selection-end-line="1588" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1588" column="0" selection-start-line="1588" selection-start-column="0" selection-end-line="1588" selection-end-column="0" />
           <folding>
             <element signature="method#init#0;class#TamilLayout#0" expanded="false" />
             <element signature="method#initAtomicParts#0;class#TamilLayout#0" expanded="false" />
@@ -935,6 +914,24 @@
             <element signature="method#init14#0;class#TamilLayout#0" expanded="false" />
             <element signature="method#init15#0;class#TamilLayout#0" expanded="false" />
             <element signature="method#init16#0;class#TamilLayout#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/org/morph/test/IOChecking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/org/morph/io/IOLayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.52238804">
+          <caret line="34" column="77" selection-start-line="34" selection-start-column="77" selection-end-line="34" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
