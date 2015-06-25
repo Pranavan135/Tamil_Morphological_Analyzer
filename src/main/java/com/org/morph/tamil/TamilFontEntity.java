@@ -15,11 +15,12 @@ public class TamilFontEntity {
 
     /**
      * constructor for basic tamil alphabets
+     *
      * @param unicodeList
      * @param xLocation
      * @param yLocation
      */
-    public TamilFontEntity(List<String> unicodeList, int xLocation, int yLocation){
+    public TamilFontEntity(List<String> unicodeList, int xLocation, int yLocation) {
         this.unicodeList = unicodeList;
         this.xLocation = xLocation;
         this.yLocation = yLocation;
@@ -28,16 +29,17 @@ public class TamilFontEntity {
 
     /**
      * constructor for tamil body, live, and weapon alphabets
+     *
      * @param unicodeList
      * @param x
      */
-    public TamilFontEntity(List<String> unicodeList, int x){
+    public TamilFontEntity(List<String> unicodeList, int x) {
         this.unicodeList = unicodeList;
         this.x = x;
         isTamilLetter = true;
     }
 
-    public TamilFontEntity(String charList){
+    public TamilFontEntity(String charList) {
         this.charList = charList;
         isTamilLetter = false;
     }
@@ -46,20 +48,20 @@ public class TamilFontEntity {
         return unicodeList;
     }
 
-    public int getxLocation() {
-        return xLocation;
-    }
-
-    public int getyLocation() {
-        return yLocation;
-    }
-
     public void setUnicodeList(List<String> unicodeList) {
         this.unicodeList = unicodeList;
     }
 
+    public int getxLocation() {
+        return xLocation;
+    }
+
     public void setxLocation(int xLocation) {
         this.xLocation = xLocation;
+    }
+
+    public int getyLocation() {
+        return yLocation;
     }
 
     public void setyLocation(int yLocation) {
@@ -68,10 +70,10 @@ public class TamilFontEntity {
 
     @Override
     public String toString() {
-        if(isTamilLetter){
+        if (isTamilLetter) {
             String str = "";
 
-            for(String s : unicodeList){
+            for (String s : unicodeList) {
                 str = str + s;
             }
             return str;
@@ -81,7 +83,7 @@ public class TamilFontEntity {
 
     }
 
-    public boolean isTamilLetter(){
+    public boolean isTamilLetter() {
         return isTamilLetter;
     }
 }

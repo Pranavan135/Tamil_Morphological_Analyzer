@@ -13,26 +13,25 @@ public class IOLayer {
 
     /**
      * if we input the tamil text from a file
+     *
      * @param text
      * @return list of Tamil fonts in the text
      */
-    public static List<TamilFontEntity> getTamil(String text){
+    public static List<TamilFontEntity> getTamil(String text) {
         List<TamilFontEntity> tamilFontEntities = new ArrayList<>();
 
-        for(int i = 0 ; i < text.length() ; i++){
+        for (int i = 0; i < text.length(); i++) {
 
             String s1 = String.valueOf(text.charAt(i));
 
-            if(TamilLayout.startLetters.contains(s1) && i + 1 < text.length()){
-                String s2 = String.valueOf(text.charAt(i+1));
+            if (TamilLayout.startLetters.contains(s1) && i + 1 < text.length()) {
+                String s2 = String.valueOf(text.charAt(i + 1));
 
-                if(TamilLayout.endLetters.contains(s2 + " ")){
+                if (TamilLayout.endLetters.contains(s2 + " ")) {
                     tamilFontEntities.add(TamilLayout.tamilLetterMap.get(s1 + s2 + " "));
                     i = i + 1;
-                }
-
-                else {
-                   tamilFontEntities.add(TamilLayout.tamilLetterMap.get(s1));
+                } else {
+                    tamilFontEntities.add(TamilLayout.tamilLetterMap.get(s1));
                 }
             } else {
                 tamilFontEntities.add(new TamilFontEntity(s1));
@@ -41,15 +40,17 @@ public class IOLayer {
         return tamilFontEntities;
     }
 
-    /** change list of TamilFontEntity to tamil text
+    /**
+     * change list of TamilFontEntity to tamil text
+     *
      * @param list
      * @return string of tamil text
      */
-    public static StringBuilder getText(List<TamilFontEntity> list){
+    public static StringBuilder getText(List<TamilFontEntity> list) {
         StringBuilder stringBuilder = new StringBuilder();
 
-        for(TamilFontEntity tamilFontEntity : list){
-            if(tamilFontEntity.isTamilLetter())
+        for (TamilFontEntity tamilFontEntity : list) {
+            if (tamilFontEntity.isTamilLetter())
                 stringBuilder.append(tamilFontEntity.toString().trim());
             else
                 stringBuilder.append(tamilFontEntity.toString());
@@ -70,6 +71,7 @@ public class IOLayer {
         System.out.println(tamilFontEntities1.size());
 
         List<TamilFontEntity> tamilFontEntities2 = getTamil(text2);
+        System.out.println(tamilFontEntities1.get(0).getxLocation() + " " + tamilFontEntities1.get(0).getyLocation());
         System.out.println(tamilFontEntities2.size());
 
         System.out.println(TamilLayout.startLetters);
