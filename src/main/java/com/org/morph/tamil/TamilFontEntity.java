@@ -23,10 +23,12 @@ public class TamilFontEntity {
     public TamilFontEntity(List<String> unicodeList, int x){
         this.unicodeList = unicodeList;
         this.x = x;
+        isTamilLetter = true;
     }
 
     public TamilFontEntity(String charList){
         this.charList = charList;
+        isTamilLetter = false;
     }
 
     public List<String> getUnicodeList() {
@@ -55,11 +57,16 @@ public class TamilFontEntity {
 
     @Override
     public String toString() {
-        String str = "";
+        if(isTamilLetter){
+            String str = "";
 
-        for(String s : unicodeList){
-            str = str + s;
+            for(String s : unicodeList){
+                str = str + s;
+            }
+            return str;
+        } else {
+            return charList;
         }
-        return str;
+
     }
 }

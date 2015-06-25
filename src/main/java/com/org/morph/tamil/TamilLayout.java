@@ -15,6 +15,8 @@ public class TamilLayout {
     public static HashMap<String,TamilFontEntity> tamilLetterMap = new HashMap<>();
     public static HashMap<String,TamilFontEntity> livesMap = new HashMap<>();
     public static HashMap<String,TamilFontEntity> bodiesMap = new HashMap<>();
+    public static List<String> startLetters = new ArrayList<>();
+    public static List<String> endLetters = new ArrayList<>();
 
     public static void init(){
         init0(0);
@@ -37,12 +39,13 @@ public class TamilLayout {
         init17(17);
         initLives();
         initBodies();
+        initAtomicParts();
 
         /**
          * putting 12x18 letters into the map
          */
-        for(int i = 0 ; i < 12 ; i++){
-            for(int j = 0 ; j < 18 ; j++){
+        for(int i = 0 ; i < 18 ; i++){
+            for(int j = 0 ; j < 12 ; j++){
                 tamilLetterMap.put(tamilFontEntities[i][j].toString(), tamilFontEntities[i][j]);
             }
         }
@@ -63,8 +66,25 @@ public class TamilLayout {
             tamilLetterMap.put(bodies[i].toString(), bodies[i]);
             bodiesMap.put(bodies[i].toString(), bodies[i]);
         }
+
     }
 
+    private static void initAtomicParts(){
+        for(int i = 0 ; i < 18 ; i++){
+            startLetters.add(tamilFontEntities[i][0].toString());
+        }
+
+        for(int i = 0 ; i < 11 ; i++){
+            startLetters.add(lives[i].toString());
+        }
+
+        endLetters.add(String.valueOf(lives[11].getUnicodeList().get(1)));
+        endLetters.add(bodies[0].getUnicodeList().get(1));
+
+        for(int i = 1 ; i < 12 ; i++){
+            endLetters.add(tamilFontEntities[0][i].getUnicodeList().get(1));
+        }
+    }
 
     private static void initBodies(){
         List<String> list1 = new ArrayList<>();
@@ -1566,6 +1586,8 @@ public class TamilLayout {
     }
     public static void main(String[] args) {
         TamilLayout.init();
+        if(TamilLayout.tamilLetterMap.get("ன்") != null)
+            System.out.println(TamilLayout.tamilLetterMap.get("நா").toString());
     }
 
 }
