@@ -13,6 +13,12 @@ public class TamilFontEntity {
     private int x;
     private boolean isTamilLetter;
 
+    /**
+     * constructor for basic tamil alphabets
+     * @param unicodeList
+     * @param xLocation
+     * @param yLocation
+     */
     public TamilFontEntity(List<String> unicodeList, int xLocation, int yLocation){
         this.unicodeList = unicodeList;
         this.xLocation = xLocation;
@@ -20,6 +26,11 @@ public class TamilFontEntity {
         isTamilLetter = true;
     }
 
+    /**
+     * constructor for tamil body, live, and weapon alphabets
+     * @param unicodeList
+     * @param x
+     */
     public TamilFontEntity(List<String> unicodeList, int x){
         this.unicodeList = unicodeList;
         this.x = x;
@@ -68,5 +79,9 @@ public class TamilFontEntity {
             return charList;
         }
 
+    }
+
+    public boolean isTamilLetter(){
+        return isTamilLetter;
     }
 }

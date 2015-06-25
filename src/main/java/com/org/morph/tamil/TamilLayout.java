@@ -9,13 +9,47 @@ import java.util.List;
  */
 public class TamilLayout {
 
+    /**
+     * 18x12 tamil fonts
+     */
     public static TamilFontEntity[][] tamilFontEntities = new TamilFontEntity[18][12];
+
+    /**
+     * 12 lives
+     */
     public static TamilFontEntity[] lives = new TamilFontEntity[12];
+
+    /**
+     * 18 bodies
+     */
     public static TamilFontEntity[] bodies = new TamilFontEntity[18];
+
+    public static TamilFontEntity weapon;
+    /**
+     * the tamil letter map
+     */
     public static HashMap<String,TamilFontEntity> tamilLetterMap = new HashMap<>();
+
+    /**
+     * live letters map
+     */
     public static HashMap<String,TamilFontEntity> livesMap = new HashMap<>();
+
+    /**
+     * body letters map
+     */
     public static HashMap<String,TamilFontEntity> bodiesMap = new HashMap<>();
+
+    /**
+     * list of tamil start letters of a tamil font
+     *[க, ங, ச, ஞ, ட, ண, த, ந, ப, ம, ய, ர, ல, வ, ழ, ள, ற, ன, அ, ஆ, இ, ஈ, உ, ஊ, எ, ஏ, ஐ, ஒ, ஓ, ஃ]
+     */
     public static List<String> startLetters = new ArrayList<>();
+
+    /**
+     * list of tamil end letters
+     * [ள, ் , ா , ி , ீ , ு , ூ , ெ , ே , ை , ொ , ோ , ௌ ]
+     */
     public static List<String> endLetters = new ArrayList<>();
 
     public static void init(){
@@ -66,6 +100,15 @@ public class TamilLayout {
             tamilLetterMap.put(bodies[i].toString(), bodies[i]);
             bodiesMap.put(bodies[i].toString(), bodies[i]);
         }
+
+        /**
+         * weapon font
+         */
+
+        List<String> l = new ArrayList<>();
+        l.add("ஃ");
+        weapon = new TamilFontEntity(l, 100);
+        tamilLetterMap.put(weapon.toString(), weapon);
 
     }
 

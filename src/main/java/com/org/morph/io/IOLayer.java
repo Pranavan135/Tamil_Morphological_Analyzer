@@ -12,9 +12,9 @@ import java.util.List;
 public class IOLayer {
 
     /**
-     * need to implement
+     * if we input the tamil text from a file
      * @param text
-     * @return
+     * @return list of Tamil fonts in the text
      */
     public static List<TamilFontEntity> getTamil(String text){
         List<TamilFontEntity> tamilFontEntities = new ArrayList<>();
@@ -41,21 +41,27 @@ public class IOLayer {
         return tamilFontEntities;
     }
 
-    /**
+    /** change list of TamilFontEntity to tamil text
      * @param list
-     * @return
+     * @return string of tamil text
      */
     public static StringBuilder getText(List<TamilFontEntity> list){
         StringBuilder stringBuilder = new StringBuilder();
 
         for(TamilFontEntity tamilFontEntity : list){
-            stringBuilder.append(tamilFontEntity.toString());
+            if(tamilFontEntity.isTamilLetter())
+                stringBuilder.append(tamilFontEntity.toString().trim());
+            else
+                stringBuilder.append(tamilFontEntity.toString());
         }
 
         return stringBuilder;
     }
 
     public static void main(String[] args) {
+        /**
+         * sample tests
+         */
         TamilLayout.init();
         String text1 = "நான் கடைக்கு போனேன்";
         String text2 = "நான் கடைக்கு நடந்து கடைக்கு போனேன்";
@@ -66,8 +72,11 @@ public class IOLayer {
         List<TamilFontEntity> tamilFontEntities2 = getTamil(text2);
         System.out.println(tamilFontEntities2.size());
 
-//        if(TamilLayout.tamilLetterMap.get("கா") != null)
-//            System.out.println("OK");
-////            System.out.println(TamilLayout.tamilLetterMap.get("ன").toString());
+        System.out.println(TamilLayout.startLetters);
+        System.out.println(TamilLayout.endLetters);
+
+        System.out.println(getText(tamilFontEntities1).toString());
+        System.out.println(getText(tamilFontEntities2).toString());
+
     }
 }
