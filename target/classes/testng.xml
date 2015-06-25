@@ -1,9 +1,0 @@
-
-<suite name="TestNG" verbose="1" parallel="false" thread-count="2"
-       data-provider-thread-count="3">
-
-
-
-
-</suite>
-
