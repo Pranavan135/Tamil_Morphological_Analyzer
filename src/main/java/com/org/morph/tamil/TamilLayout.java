@@ -60,7 +60,7 @@ public class TamilLayout {
         }
 
         /**
-         * putting bodies into map
+         * putting bodies into maps
          */
         for(int i = 0 ; i < 18 ; i++){
             tamilLetterMap.put(bodies[i].toString(), bodies[i]);
@@ -179,6 +179,7 @@ public class TamilLayout {
         list18.add("் ");
         bodies[17] = new TamilFontEntity(list18,17);
     }
+
     private static void initLives(){
         List<String> list1 = new ArrayList<>();
         List<String> list2 = new ArrayList<>();
@@ -232,6 +233,7 @@ public class TamilLayout {
 
 
     }
+
     private static void init0(int index){
         List<String> list1 = new ArrayList<>();
         List<String> list2 = new ArrayList<>();
@@ -1584,10 +1586,5 @@ public class TamilLayout {
         tamilFontEntities[index][11] = new TamilFontEntity(list12,0,11);
         System.out.println(tamilFontEntities[index][11]);
     }
-    public static void main(String[] args) {
-        TamilLayout.init();
-        if(TamilLayout.tamilLetterMap.get("ன்") != null)
-            System.out.println(TamilLayout.tamilLetterMap.get("நா").toString());
-    }
-
+  
 }
