@@ -48,9 +48,6 @@ public class NounDetectionLayer {
 
             firstPart.add(TamilLayout.bodies[x]);
 
-          //  System.out.println(tamilLetters.get(tamilLetters.size() - 1).equals(IOLayer.getTamil("ளி").get(0)));
-            //System.out.println(tamilLetters.get(tamilLetters.size() - 2).getyLocation() == 1);
-
             if (tamilLetters.get(tamilLetters.size()-1).equals(IOLayer.getTamil("ளி").get(0)) && tamilLetters.get(tamilLetters.size()-2).getyLocation() == 1) {
                 if (NounList.isNoun(firstPart)) {
 
@@ -61,9 +58,7 @@ public class NounDetectionLayer {
 
         }
 
-        if(tamilLetters.size() >= 3){
-            //System.out.println(tamilLetters.size());
-          //  System.out.println(tamilLetters);
+        if(tamilLetters.size() >= 3) {
             List<TamilFontEntity> firstPart = tamilLetters.subList(tamilLetters.size()-3, tamilLetters.size());
 
             if(firstPart.equals(IOLayer.getTamil("காரன்"))){
