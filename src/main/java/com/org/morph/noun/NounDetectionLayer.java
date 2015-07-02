@@ -85,6 +85,10 @@ public class NounDetectionLayer {
 
     }
 
+    /**
+     * To check whether the given word in a noun
+     * @return true if the word is noun, false if the word is not noun
+     */
     public boolean isNoun(){
         return isNoun;
     }

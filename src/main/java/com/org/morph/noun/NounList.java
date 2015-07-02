@@ -43,18 +43,20 @@ public class NounList {
     /**
      * To check whether a given data is a noun in the list
      * @param word List of tamil characters of a tamil word
-     * @return true if it is in a list
+     * @return true if it is in a noun list
      */
     public static boolean isNoun(List<TamilFontEntity> word){
        return listOfNouns.contains(word);
     }
 
+
+    /**
+     * To check whether a given word is a noun in the list
+     * @param word Given word in String
+     * @return true if it is in a noun list
+     */
     public static boolean isNoun(String word){
         List<TamilFontEntity> tm = IOLayer.getTamil(word);
-        for(TamilFontEntity t : tm){
-            System.out.println(t);
-        }
-
         return isNoun(IOLayer.getTamil(word));
     }
 
