@@ -52,63 +52,68 @@ public class TamilLayout {
      */
     public static List<String> endLetters = new ArrayList<>();
 
+    private static boolean initializer = false;
+
     public static void init() {
-        init0(0);
-        init1(1);
-        init2(2);
-        init3(3);
-        init4(4);
-        init5(5);
-        init6(6);
-        init7(7);
-        init8(8);
-        init9(9);
-        init10(10);
-        init11(11);
-        init12(12);
-        init13(13);
-        init14(14);
-        init15(15);
-        init16(16);
-        init17(17);
-        initLives();
-        initBodies();
-        initAtomicParts();
+        if(!initializer) {
+            init0(0);
+            init1(1);
+            init2(2);
+            init3(3);
+            init4(4);
+            init5(5);
+            init6(6);
+            init7(7);
+            init8(8);
+            init9(9);
+            init10(10);
+            init11(11);
+            init12(12);
+            init13(13);
+            init14(14);
+            init15(15);
+            init16(16);
+            init17(17);
+            initLives();
+            initBodies();
+            initAtomicParts();
 
-        /**
-         * putting 12x18 letters into the map
-         */
-        for (int i = 0; i < 18; i++) {
-            for (int j = 0; j < 12; j++) {
-                tamilLetterMap.put(tamilFontEntities[i][j].toString(), tamilFontEntities[i][j]);
+            /**
+             * putting 12x18 letters into the map
+             */
+            for (int i = 0; i < 18; i++) {
+                for (int j = 0; j < 12; j++) {
+                    tamilLetterMap.put(tamilFontEntities[i][j].toString(), tamilFontEntities[i][j]);
+                }
             }
+
+            /**
+             * putting lives into maps
+             */
+
+            for (int i = 0; i < 12; i++) {
+                tamilLetterMap.put(lives[i].toString(), lives[i]);
+                livesMap.put(lives[i].toString(), lives[i]);
+            }
+
+            /**
+             * putting bodies into maps
+             */
+            for (int i = 0; i < 18; i++) {
+                tamilLetterMap.put(bodies[i].toString(), bodies[i]);
+                bodiesMap.put(bodies[i].toString(), bodies[i]);
+            }
+
+            /**
+             * weapon font
+             */
+
+            List<String> l = new ArrayList<>();
+            l.add("ஃ");
+            weapon = new TamilFontEntity(l, 100);
+            tamilLetterMap.put(weapon.toString(), weapon);
+            initializer = true;
         }
-
-        /**
-         * putting lives into maps
-         */
-
-        for (int i = 0; i < 12; i++) {
-            tamilLetterMap.put(lives[i].toString(), lives[i]);
-            livesMap.put(lives[i].toString(), lives[i]);
-        }
-
-        /**
-         * putting bodies into maps
-         */
-        for (int i = 0; i < 18; i++) {
-            tamilLetterMap.put(bodies[i].toString(), bodies[i]);
-            bodiesMap.put(bodies[i].toString(), bodies[i]);
-        }
-
-        /**
-         * weapon font
-         */
-
-        List<String> l = new ArrayList<>();
-        l.add("ஃ");
-        weapon = new TamilFontEntity(l, 100);
-        tamilLetterMap.put(weapon.toString(), weapon);
 
     }
 

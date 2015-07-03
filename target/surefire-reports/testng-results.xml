@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="TestNG" duration-ms="0" started-at="2015-06-25T06:55:25Z" finished-at="2015-06-25T06:55:25Z">
+  <suite name="TestNG" duration-ms="0" started-at="2015-07-01T11:36:53Z" finished-at="2015-07-01T11:36:53Z">
     <groups>
     </groups>
   </suite> <!-- TestNG -->
