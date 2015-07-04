@@ -110,7 +110,7 @@ public class TamilLayout {
 
             List<String> l = new ArrayList<>();
             l.add("ஃ");
-            weapon = new TamilFontEntity(l, 100);
+            weapon = new TamilFontEntity(l, 100, false);
             tamilLetterMap.put(weapon.toString(), weapon);
             initializer = true;
         }
@@ -157,75 +157,75 @@ public class TamilLayout {
 
         list1.add("க");
         list1.add("் ");
-        bodies[0] = new TamilFontEntity(list1, 0);
+        bodies[0] = new TamilFontEntity(list1, 0, false);
 
         list2.add("ங");
         list2.add("் ");
-        bodies[1] = new TamilFontEntity(list2, 1);
+        bodies[1] = new TamilFontEntity(list2, 1, false);
 
         list3.add("ச");
         list3.add("் ");
-        bodies[2] = new TamilFontEntity(list3, 2);
+        bodies[2] = new TamilFontEntity(list3, 2, false);
 
         list4.add("ஞ");
         list4.add("் ");
-        bodies[3] = new TamilFontEntity(list4, 3);
+        bodies[3] = new TamilFontEntity(list4, 3, false);
 
         list5.add("ட");
         list5.add("் ");
-        bodies[4] = new TamilFontEntity(list5, 4);
+        bodies[4] = new TamilFontEntity(list5, 4, false);
 
         list6.add("ண");
         list6.add("் ");
-        bodies[5] = new TamilFontEntity(list6, 5);
+        bodies[5] = new TamilFontEntity(list6, 5, false);
 
         list7.add("த");
         list7.add("் ");
-        bodies[6] = new TamilFontEntity(list7, 6);
+        bodies[6] = new TamilFontEntity(list7, 6, false);
 
         list8.add("ந");
         list8.add("் ");
-        bodies[7] = new TamilFontEntity(list8, 7);
+        bodies[7] = new TamilFontEntity(list8, 7, false);
 
         list9.add("ப");
         list9.add("் ");
-        bodies[8] = new TamilFontEntity(list9, 8);
+        bodies[8] = new TamilFontEntity(list9, 8, false);
 
         list10.add("ம");
         list10.add("் ");
-        bodies[9] = new TamilFontEntity(list10, 9);
+        bodies[9] = new TamilFontEntity(list10, 9, false);
 
         list11.add("ய");
         list11.add("் ");
-        bodies[10] = new TamilFontEntity(list11, 10);
+        bodies[10] = new TamilFontEntity(list11, 10, false);
 
         list12.add("ர");
         list12.add("் ");
-        bodies[11] = new TamilFontEntity(list12, 11);
+        bodies[11] = new TamilFontEntity(list12, 11, false);
 
         list13.add("ல");
         list13.add("் ");
-        bodies[12] = new TamilFontEntity(list13, 12);
+        bodies[12] = new TamilFontEntity(list13, 12, false);
 
         list14.add("வ");
         list14.add("் ");
-        bodies[13] = new TamilFontEntity(list14, 13);
+        bodies[13] = new TamilFontEntity(list14, 13, false);
 
         list15.add("ழ");
         list15.add("் ");
-        bodies[14] = new TamilFontEntity(list15, 14);
+        bodies[14] = new TamilFontEntity(list15, 14, false);
 
         list16.add("ள");
         list16.add("் ");
-        bodies[15] = new TamilFontEntity(list16, 15);
+        bodies[15] = new TamilFontEntity(list16, 15, false);
 
         list17.add("ற");
         list17.add("் ");
-        bodies[16] = new TamilFontEntity(list17, 16);
+        bodies[16] = new TamilFontEntity(list17, 16, false);
 
         list18.add("ன");
         list18.add("் ");
-        bodies[17] = new TamilFontEntity(list18, 17);
+        bodies[17] = new TamilFontEntity(list18, 17, false);
     }
 
     private static void initLives() {
@@ -243,41 +243,41 @@ public class TamilLayout {
         List<String> list12 = new ArrayList<>();
 
         list1.add("அ");
-        lives[0] = new TamilFontEntity(list1, 0);
+        lives[0] = new TamilFontEntity(list1, 0, true);
 
         list2.add("ஆ");
-        lives[1] = new TamilFontEntity(list2, 1);
+        lives[1] = new TamilFontEntity(list2, 1, true);
 
         list3.add("இ");
-        lives[2] = new TamilFontEntity(list3, 2);
+        lives[2] = new TamilFontEntity(list3, 2, true);
 
         list4.add("ஈ");
-        lives[3] = new TamilFontEntity(list4, 3);
+        lives[3] = new TamilFontEntity(list4, 3, true);
 
         list5.add("உ");
-        lives[4] = new TamilFontEntity(list5, 4);
+        lives[4] = new TamilFontEntity(list5, 4, true);
 
         list6.add("ஊ");
-        lives[5] = new TamilFontEntity(list6, 5);
+        lives[5] = new TamilFontEntity(list6, 5, true);
 
         list7.add("எ");
-        lives[6] = new TamilFontEntity(list7, 6);
+        lives[6] = new TamilFontEntity(list7, 6, true);
 
         list8.add("ஏ");
-        lives[7] = new TamilFontEntity(list8, 7);
+        lives[7] = new TamilFontEntity(list8, 7, true);
 
         list9.add("ஐ");
-        lives[8] = new TamilFontEntity(list9, 8);
+        lives[8] = new TamilFontEntity(list9, 8, true);
 
         list10.add("ஒ");
-        lives[9] = new TamilFontEntity(list10, 9);
+        lives[9] = new TamilFontEntity(list10, 9, true);
 
         list11.add("ஓ");
-        lives[10] = new TamilFontEntity(list11, 10);
+        lives[10] = new TamilFontEntity(list11, 10, true);
 
         list12.add("ஒ");
         list12.add("ள");
-        lives[11] = new TamilFontEntity(list12, 11);
+        lives[11] = new TamilFontEntity(list12, 11, true);
 
 
     }

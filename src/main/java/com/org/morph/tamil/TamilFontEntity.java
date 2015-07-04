@@ -10,12 +10,11 @@ public class TamilFontEntity {
     private String charList;
     private int xLocation;
     private int yLocation;
-    private int x;
     private boolean isTamilLetter;
+    private boolean isLive;
 
     /**
      * constructor for basic tamil alphabets
-     *
      * @param unicodeList
      * @param xLocation
      * @param yLocation
@@ -29,14 +28,23 @@ public class TamilFontEntity {
 
     /**
      * constructor for tamil body, live, and weapon alphabets
-     *
      * @param unicodeList
-     * @param x
+     * @param index
+     * @param isLive
      */
-    public TamilFontEntity(List<String> unicodeList, int x) {
+    public TamilFontEntity(List<String> unicodeList, int index, boolean isLive) {
         this.unicodeList = unicodeList;
-        this.x = x;
         isTamilLetter = true;
+        this.isLive = isLive;
+
+        if(!isLive) {
+            this.xLocation = index;
+            this.yLocation =  -1;
+        } else {
+            this.yLocation = index;
+            this.xLocation = -1;
+        }
+
     }
 
     public TamilFontEntity(String charList) {
