@@ -60,10 +60,7 @@ public class NounRule {
      * @return true if the word satisfies the given pattern, otherwise false
      */
     public boolean checkPattern(List<TamilFontEntity> tamilWord) {
-        if(IOLayer.getTamil(pattern).equals(tamilWord))
-            return true;
-        else
-            return false;
+        return IOLayer.getTamil(pattern).equals(tamilWord);
     }
 
     /**
@@ -71,16 +68,8 @@ public class NounRule {
      * @param tamilCharacter Tamil character to be checked
      * @return true if the x coordinate matches, false otherwise
      */
-    public boolean isXCoordinateMatches(TamilFontEntity tamilCharacter){
-        if(xCoordinateBefore == -1)
-            return true;
-        else{
-            if(xCoordinateBefore == tamilCharacter.getxLocation()){
-                return true;
-            }
-            else
-                return false;
-        }
+    public boolean isXCoordinateMatches(TamilFontEntity tamilCharacter) {
+        return xCoordinateBefore == -1 || xCoordinateBefore == tamilCharacter.getxLocation();
     }
 
     /**
@@ -88,16 +77,8 @@ public class NounRule {
     * @param tamilCharacter Tamil character to be checked
     * @return true if the y coordinate matches, false otherwise
     */
-    public boolean isYCoordinateMatches(TamilFontEntity tamilCharacter){
-        if(yCoordinateBefore == -1)
-            return true;
-        else{
-            if (yCoordinateBefore == tamilCharacter.getyLocation()){
-                return true;
-            }
-            else
-                return false;
-        }
+    public boolean isYCoordinateMatches(TamilFontEntity tamilCharacter) {
+        return yCoordinateBefore == -1 || yCoordinateBefore == tamilCharacter.getyLocation();
     }
 
     /**

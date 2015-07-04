@@ -11,8 +11,6 @@ import java.util.logging.Logger;
  * This class deals with the set of rules to identify the noun based on its Ending
  */
 public class NounEndingPatternRules {
-    // Used to read the rules from the file
-    private static Scanner fileInput;
     // List of noun rules that used to find the nouns
     private static ArrayList<NounRule> nounRuleList;
     private static Logger log = Logger.getLogger(NounEndingPatternRules.class.getName());
@@ -22,7 +20,7 @@ public class NounEndingPatternRules {
      */
     public static void init() {
         try {
-            fileInput = new Scanner(new File(new File("src/main/resources/nounPattern.format").getCanonicalPath()));
+            Scanner fileInput = new Scanner(new File(new File("src/main/resources/nounPattern.format").getCanonicalPath()));
             nounRuleList = new ArrayList<>();
             fileInput.nextLine();
 
@@ -68,20 +66,12 @@ public class NounEndingPatternRules {
      */
     private static boolean satisfies(NounRule nounRule, List<TamilFontEntity> entities) {
         if(entities.size() >= nounRule.getMinimumLength()){
-            ArrayList<TamilFontEntity> fPart =  new ArrayList<TamilFontEntity>(entities);
+            ArrayList<TamilFontEntity> fPart =  new ArrayList<>(entities);
 
             int min = nounRule.getNumberOfLastCharactersToBeChecked();
             List<TamilFontEntity> temp = fPart.subList(entities.size()-min,entities.size());
-            if(nounRule.checkPattern(temp)) {
-                if(nounRule.isbeforePositionToBeChecked()){
-                    if(nounRule.isXCoordinateMatches(fPart.get(fPart.size()-min-1)) && nounRule.isYCoordinateMatches(fPart.get(fPart.size() - min - 1)))
-                        return true;
-                    else
-                        return false;
-                }
-                else
-                    return true;
-            }
+            if(nounRule.checkPattern(temp))
+                return !nounRule.isbeforePositionToBeChecked() || nounRule.isXCoordinateMatches(fPart.get(fPart.size() - min - 1)) && nounRule.isYCoordinateMatches(fPart.get(fPart.size() - min - 1));
             else
                 return false;
         }
