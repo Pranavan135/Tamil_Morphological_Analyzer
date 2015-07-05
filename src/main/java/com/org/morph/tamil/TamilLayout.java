@@ -1635,4 +1635,8 @@ public class TamilLayout {
         System.out.println(tamilFontEntities[index][11]);
     }
 
+    public static TamilFontEntity getEntity(int x, int y){
+        return tamilFontEntities[x][y];
+    }
+
 }
