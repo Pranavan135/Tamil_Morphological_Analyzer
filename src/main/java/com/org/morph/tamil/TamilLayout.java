@@ -939,7 +939,7 @@ public class TamilLayout {
         tamilFontEntities[index][7] = new TamilFontEntity(list8, index, 7);
         System.out.print(tamilFontEntities[index][7] + " ");
 
-        list9.add("ற");
+        list9.add("ப");
         list9.add("ை ");
         tamilFontEntities[index][8] = new TamilFontEntity(list9, index, 8);
         System.out.print(tamilFontEntities[index][8] + " ");
