@@ -784,7 +784,7 @@ public class TamilLayout {
         tamilFontEntities[index][6] = new TamilFontEntity(list7, 0, 6);
         System.out.print(tamilFontEntities[index][6] + " ");
 
-        list8.add("க");
+        list8.add("த");
         list8.add("ே ");
         tamilFontEntities[index][7] = new TamilFontEntity(list8, 0, 7);
         System.out.print(tamilFontEntities[index][7] + " ");
