@@ -52,6 +52,11 @@ public class TamilLayout {
      */
     public static List<String> endLetters = new ArrayList<>();
 
+    /**
+     * full stop
+     */
+    public static TamilFontEntity fullStopEntity;
+
     private static boolean initializer = false;
 
     public static void init() {
@@ -112,6 +117,12 @@ public class TamilLayout {
             l.add("ஃ");
             weapon = new TamilFontEntity(l, 100, false);
             tamilLetterMap.put(weapon.toString(), weapon);
+
+
+            List<String> l1 = new ArrayList<>();
+            l1.add(".");
+            fullStopEntity = new TamilFontEntity(l1, 1000, false);
+            tamilLetterMap.put(fullStopEntity.toString(), fullStopEntity);
             initializer = true;
         }
 
