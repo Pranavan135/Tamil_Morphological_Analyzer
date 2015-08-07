@@ -47,7 +47,7 @@ public class VerbDetectionLayer {
         verbDetectionLayer.setWord("வந்தது.");
         System.out.println(verbDetectionLayer.isVerb());
 
-        verbDetectionLayer.setWord("வந்தான் .");
+        verbDetectionLayer.setWord("வந்தான்.");
         System.out.println(verbDetectionLayer.isVerb());
     }
 
