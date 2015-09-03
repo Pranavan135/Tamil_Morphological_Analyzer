@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
- * Created by DELL on 2/1/1980.
+ * This class is used to analysis the nouns end with Al
+ * Created by Nilusija
  */
 public class ExtractNounStemAlLayer {
     /**
