@@ -8,16 +8,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by DELL on 2/1/1980.
+ * This class is used to analysis the nouns end with  இலிருந்து
+ * Created by Nilusija
  */
+
 public class ExtractNounStemIrunthuLayer {
     private List<TamilFontEntity> tamilLetters;
 
     /**
-     * Extract the noun from the 4 th proposition
-     * noun + இருந்து
-     * @return stem of the noun as a list
+     * Extract the stem noun from the word which affix with இல் + இருந்து
+     * noun + இல் + இருந்து
+     * @return stem of the noun as a TamilFontEntity list
      */
+
     public static List<TamilFontEntity> extractStemNounIrunthu(String word) {
         ArrayList<TamilFontEntity> letters;
         List<TamilFontEntity> tamilLetters = IOLayer.getTamil(word);

@@ -8,14 +8,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by DELL on 7/9/2015.
+ * This class is used to analysis the nouns end with இன் , இல்
+ * Created by Nilusija
  */
+
 public class ExtractNounStemInIlLayer {
+
     /**
-     * noun + இல்
-     * noun + இன்
-     * @return the stem of the noun
+     * Extract the stem noun from the word which affix with 5 th proposition இன் , இல்
+     * noun + இன் , noun + இல்
+     * @return stem of the noun as a TamilFontEntity list
      */
+
     public static List<TamilFontEntity> extractNounStemInIl(String word) {
         List<TamilFontEntity> tamilLetters = IOLayer.getTamil(word);
         ArrayList<TamilFontEntity> letters;

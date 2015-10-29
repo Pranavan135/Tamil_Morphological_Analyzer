@@ -8,14 +8,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by user on 7/21/2015.
+* This class is used to analysis the nouns end with னிலிருந்து
+* Created by Nilusija
  */
+
 public class ExtractNounStemInFromLayer {
+
     /**
-     * Extract the noun from the 4 th proposition
-     * noun + இருந்து
-     * @return stem of the noun as a list
+     * Extract the stem noun from the word which affix with இன் + இல் + இருந்து
+     * noun + இன் + இல் + இருந்து
+     * @return stem of the noun as a TamilFontEntity list
      */
+
     public static List<TamilFontEntity> extractStemNounInFrom(String word) {
         List<TamilFontEntity> tamilLetters = IOLayer.getTamil(word);
         ArrayList<TamilFontEntity> letters;

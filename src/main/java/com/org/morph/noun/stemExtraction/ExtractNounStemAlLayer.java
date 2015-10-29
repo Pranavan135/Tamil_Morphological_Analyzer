@@ -8,15 +8,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * This class is used to analysis the nouns end with Al
+ * This class is used to analysis the nouns end with Al markers
  * Created by Nilusija
  */
+
 public class ExtractNounStemAlLayer {
+
     /**
-     * Extract the noun from the 3 rd proposition ஆல்
-     *
-     * @return stem of the noun as a list
+     * Extract the stem noun from the word which affix with 3 rd proposition ஆல்
+     * noun + ஆல்
+     * @return stem of the noun as a TamilFontEntity list
      */
+
     public static List<TamilFontEntity> extractStemNounAl(String word) {
         List<TamilFontEntity> tamilLetters = IOLayer.getTamil(word);
         ArrayList<TamilFontEntity> letters;

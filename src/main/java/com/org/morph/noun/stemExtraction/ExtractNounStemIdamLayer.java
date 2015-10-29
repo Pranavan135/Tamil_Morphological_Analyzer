@@ -8,13 +8,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by DELL on 7/9/2015.
+ * This class is used to analysis the nouns end with  இடம்
+ * Created by Nilusija
  */
+
 public class ExtractNounStemIdamLayer {
+
     /**
+     * Extract the stem noun from the word which affix with 7 th proposition இடம்
      * noun + இடம்
-     * @return the stem of the noun
+     * @return stem of the noun as a TamilFontEntity list
      */
+
     public static List<TamilFontEntity> extractNounStemIdam(String word) {
         List<TamilFontEntity> tamilLetters = IOLayer.getTamil(word);
         ArrayList<TamilFontEntity> letters;

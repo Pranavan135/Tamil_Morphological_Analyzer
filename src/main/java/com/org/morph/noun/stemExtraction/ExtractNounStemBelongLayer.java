@@ -8,13 +8,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by user on 7/21/2015.
+ * This class is used to analysis the nouns end with இன் + அது
+ * Created by Nilusija
  */
+
 public class ExtractNounStemBelongLayer {
+
     /**
-     * noun + அது
-     * @return the stem of the noun
+     * Extract the stem noun from the word which affix with இன் + அது
+     * noun + இன் + அது
+     * @return stem of the noun as a TamilFontEntity list
      */
+
     public static List<TamilFontEntity> extractNounStemBelong(String word) {
         List<TamilFontEntity> tamilLetters = IOLayer.getTamil(word);
         ArrayList<TamilFontEntity> letters;

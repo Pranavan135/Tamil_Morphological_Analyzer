@@ -8,15 +8,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by DELL on 2/1/1980.
- * Extracting the noun stem from 2 nd preposition (?)
+ * Extracting the noun stem from 2 nd preposition (ஐ)
+ * created by Nilusija
  */
+
 public class ExtractNounStemILayer {
 
     /**
-     * Extract the noun from the 2 nd proposition (ஐ)
-     * @return stem of the noun as a list
+     * Extract the stem noun from the word which affix with 2 nd proposition ஐ
+     * noun + ஐ
+     * @return stem of the noun as a TamilFontEntity list
      */
+
     public static List<TamilFontEntity> extractNounStemI(String word) {
         List<TamilFontEntity> tamilLetters = IOLayer.getTamil(word);
         ArrayList<TamilFontEntity> letters;
